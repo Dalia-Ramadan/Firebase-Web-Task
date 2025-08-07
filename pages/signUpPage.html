@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/signUpStyle.css" />
+    <script
+      src="https://kit.fontawesome.com/a004d35edf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="signUpForm" id="signUpForm">
+      <h1>
+        <i
+          class="fa-duotone fa-solid fa-right-to-bracket"
+          style="--fa-primary-color: #b197fc; --fa-secondary-color: #b197fc"
+        ></i
+        >sign Up
+      </h1>
+      <form id="inputForm" class="inputForm">
+        <span><i class="fa-solid fa-circle-user"></i>user name</span>
+        <input type="text" name="username" id="username" />
+        <span><i class="fa-solid fa-envelope"></i>Email</span>
+        <input type="email" name="email" id="email" />
+        <span><i class="fa-solid fa-lock"></i>password</span>
+        <input type="password" name="password" id="password" />
+        <span><i class="fa-solid fa-circle-check"></i>confirm password</span>
+        <input type="password" name="confirmPassword" id="confirmPassword" />
+      </form>
+      <button id="createBtn" class="createBtn">Create Account</button>
+      <a href="../pages/signInPage.html">You already have an account?!</a>
+      <h3>or</h3>
+      <button id="googleAccount" class="googleAccount">
+        Sign in with google
+      </button>
+      <br />
+    </div>
+    <script type="module" src="../js/signUp.js"></script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #8e44ad, #c0392b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container */
+.signIn {
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  width: 400px;
+}
+
+/* Title */
+.signIn h1 {
+  text-align: center;
+  color: #8e44ad;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.signIn h1 i {
+  margin-left: 10px;
+  color: #c0392b;
+}
+
+/* Labels */
+.signIn span {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.signIn span i {
+  margin-right: 8px;
+  color: #8e44ad;
+}
+
+/* Inputs */
+.signIn input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.signIn input:focus {
+  border-color: #8e44ad;
+  outline: none;
+  box-shadow: 0 0 8px #8e44ad88;
+}
+
+/* Button */
+.signInBtn {
+  width: 100%;
+  padding: 12px;
+  background-color: #8e44ad;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signInBtn:hover {
+  background-color: #732d91;
+  transform: scale(1.02);
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+  font-size: larger;
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline; 
+}

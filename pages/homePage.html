@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script
+      src="https://kit.fontawesome.com/a004d35edf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/homeStyle.css" />
+  </head>
+  <body>
+    <h1 id="currentUser"></h1>
+    <a href="../pages/signInPage.html"><button>Log Out</button></a>
+    <div id="optionList">
+      <a href="../pages/addProductPage.html">
+        <button>add new product</button>
+      </a>
+      <h1>Products List</h1>
+      <h3>browse our products....</h3>
+      <span><i class="fa-solid fa-filter"></i>category</span>
+      <select name="category" id="category">
+        <option value="all">All</option>
+        <option value="Electronics">Electronics</option>
+        <option value="clothes">Clothes</option>
+        <option value="books">Books</option>
+        <option value="sport">Sport</option>
+        <option value="home tools">Home Tools</option>
+      </select>
+      <span><i class="fa-solid fa-dollar-sign"></i>Price</span>
+      <select name="price" id="price">
+        <option value="all">All</option>
+        <option value="less-than">less than 50$</option>
+        <option value="50$-100$">50$.....100$</option>
+        <option value="100$-200$">100$.....200$</option>
+        <option value="more-than">more than 200$</option>
+      </select>
+      <span><i class="fa-solid fa-sort"></i>order by</span>
+      <select name="orderBy" id="orderBy">
+        <option value="all">All</option>
+        <option value="Oldest-first">Oldest first</option>
+        <option value="Newest-first">Newest first</option>
+        <option value="priceHigh">Price: from highest to lowest</option>
+        <option value="priceLow">Price: from lowest to highest</option>
+      </select>
+    </div>
+    <div class="productList" id="productList"></div>
+    <script type="module" src="../js/home.js"></script>
+  </body>
+</html>

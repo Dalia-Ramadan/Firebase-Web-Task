@@ -1,0 +1,137 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+#optionList {
+  background-color: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+#currentUser {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+a{
+    text-decoration: none;
+}
+a[href*="signInPage.html"] button {
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+a[href*="signInPage.html"] button:hover {
+  background-color: #c0392b;
+}
+
+a[href*="addProductPage.html"] button {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+a[href*="addProductPage.html"] button:hover {
+  background-color: #2980b9;
+}
+
+#optionList h1 {
+  margin-top: 0;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+#optionList h3 {
+  margin-bottom: 25px;
+  color: #555;
+}
+
+#optionList span {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#optionList select {
+  margin-right: 20px;
+  margin-top: 10px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fdfdfd;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+}
+
+#optionList select:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+
+
+.productList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.productCard {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.productCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.productCard img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.productCard h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.productCard p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.productCard .price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #27ae60;
+}
